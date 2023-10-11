@@ -15,7 +15,5 @@ const filtersSlice = createSlice({
   },
 });
 
-// bad to have default with others!!!!
-
 export const filtersReducer = filtersSlice.reducer;
 export const { setStatusFilter } = filtersSlice.actions;

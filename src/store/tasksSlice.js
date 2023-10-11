@@ -1,20 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { createSelector } from "reselect";
-
-const initialTasks = [
-  {
-    id: 1,
-    name: "Task 1",
-    description: "Description of Task 1",
-    completed: false,
-  },
-  {
-    id: 2,
-    name: "Task 2",
-    description: "Description of Task 2",
-    completed: true,
-  },
-];
+import { initialTasks } from "./constants";
 
 const tasksSlice = createSlice({
   name: "tasks",

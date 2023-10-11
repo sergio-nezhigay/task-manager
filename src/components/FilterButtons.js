@@ -1,12 +1,10 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { statusFilters } from "../store/constants";
+import { ButtonGroup, Button } from "react-bootstrap";
 
+import { statusFilters } from "../store/constants";
 import { selectStatusFilter } from "../store/selectors";
 import { setStatusFilter } from "../store/filtersSlice";
-
-import ButtonGroup from "react-bootstrap/ButtonGroup";
-import Button from "react-bootstrap/Button";
 
 export const FilterButtons = () => {
   const dispatch = useDispatch();

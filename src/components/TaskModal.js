@@ -1,15 +1,12 @@
-import Button from "react-bootstrap/Button";
-import Col from "react-bootstrap/Col";
-import Form from "react-bootstrap/Form";
-import Modal from "react-bootstrap/Modal";
 import { useDispatch } from "react-redux";
-import { addTask, editTask } from "../store/tasksSlice";
-import Row from "react-bootstrap/Row";
-import { v4 as uuidv4 } from "uuid";
+import { Button, Col, Row, Form, Modal } from "react-bootstrap";
 import * as formik from "formik";
 import * as yup from "yup";
+import { v4 as uuidv4 } from "uuid";
 
-function TaskModal({ show, onHide, task }) {
+import { addTask, editTask } from "../store/tasksSlice";
+
+export const TaskModal = ({ show, onHide, task }) => {
   const { Formik } = formik;
   const dispatch = useDispatch();
   const schema = yup.object().shape({
@@ -107,6 +104,4 @@ function TaskModal({ show, onHide, task }) {
       </Formik>
     </Modal>
   );
-}
-
-export default TaskModal;
+};

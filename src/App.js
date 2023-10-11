@@ -1,14 +1,13 @@
 import React, { useState } from "react";
-import TaskList from "./components/TaskList";
-import TaskModal from "./components/TaskModal";
-
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import TaskNavbar from "components/TaskNavbar";
+import { TaskList } from "./components/TaskList";
+import { TaskModal } from "./components/TaskModal";
+import { TaskNavbar } from "components/TaskNavbar";
 
-function App() {
+export const App = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedTask, setSelectedTask] = useState(null);
 
@@ -45,6 +44,4 @@ function App() {
       </main>
     </>
   );
-}
-
-export default App;
+};

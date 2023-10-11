@@ -1,9 +1,10 @@
 import React from "react";
 import { Navbar, Container, Button, Nav } from "react-bootstrap";
+
 import { FilterButtons } from "./FilterButtons";
 import img from "../data/images/icons.svg";
 
-const MyNavbar = ({ openModal }) => {
+export const TaskNavbar = ({ openModal }) => {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container>
@@ -30,5 +31,3 @@ const MyNavbar = ({ openModal }) => {
     </Navbar>
   );
 };
-
-export default MyNavbar;

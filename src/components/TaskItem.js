@@ -1,14 +1,11 @@
-import { useDispatch } from "react-redux";
-import { deleteTask, toggleTaskStatus } from "../store/tasksSlice";
-import TaskModal from "./TaskModal";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
-
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { Form, Button, Card } from "react-bootstrap";
 
-import Form from "react-bootstrap/Form";
+import { deleteTask, toggleTaskStatus } from "../store/tasksSlice";
+import { TaskModal } from "./TaskModal";
 
-function TaskItem({ task }) {
+export const TaskItem = ({ task }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const dispatch = useDispatch();
 
@@ -62,6 +59,4 @@ function TaskItem({ task }) {
       )}
     </Card>
   );
-}
-
-export default TaskItem;
+};
