@@ -1,5 +1,6 @@
-import { statusFilters } from "./constants";
 import { createSelector } from "reselect";
+
+import { statusFilters } from "./constants";
 
 export const selectTasks = (state) => state.tasks.tasks;
 export const selectStatusFilter = (state) => state.filters.status;

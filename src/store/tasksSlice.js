@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+
 import { initialTasks } from "./constants";
 
 const tasksSlice = createSlice({
