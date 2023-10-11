@@ -43,6 +43,6 @@
 
 ## Contact Information
 
-- **Author:** Serhii Nezhyhai
-- **Email:** [abc1971h@gmail.com](mailto:abc1971h@gmail.com)
-- **My other works:** [https://serhii.vercel.app/](https://serhii.vercel.app/)
+- **Author:** [Serhii Nezhyhai](https://github.com/sergio-nezhigay) 📝
+- **Email:** [abc1971h@gmail.com](mailto:abc1971h@gmail.com) ✉️
+- **My portfolio:** [🌐 Website](https://serhii.vercel.app/)
