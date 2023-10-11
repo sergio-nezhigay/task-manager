@@ -1,4 +1,4 @@
-# 🌲 Task Manager App
+# 🚀 Task Manager App
 
 ![Task Manager](/public/screenshot.jpg)
 
