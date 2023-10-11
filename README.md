@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# 🌲 Task Manager App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Task Manager](/public/screenshot.jpg)
 
-## Available Scripts
+## Project Description
 
-In the project directory, you can run:
+🚀 A web application for managing a task list. Users can add, edit, delete, and mark tasks as completed (✅).
 
-### `npm start`
+### Main Page
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Watch a list of tasks.
+- For each task, you can see the title, description, and status (completed ✅ or not ❌).
+- Using an "Add Task" button you can create a new task.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Modal Window for Creating/Editing a Task
 
-### `npm test`
+- Helps you to add new/edit tasks with a specified title, description, and status.
+- Uses field validation (the title cannot be be empty).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Task Functionality
 
-### `npm run build`
+- Ability to mark tasks as completed (✅) or remove the mark (❌).
+- Ability to edit the title and description of a task.
+- Ability to delete tasks.
+- Task filtering by status (completed ✅ / incomplete ❌).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Data Storage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Redux and LocalStorage are used to store tasks.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technology Stack Used
 
-### `npm run eject`
+- @reduxjs/toolkit: State management library for Redux (🧰).
+- bootstrap: CSS framework for designing the user interface (🎨).
+- formik: Form library for handling forms in React applications (📝).
+- react: JavaScript library for building user interfaces (⚛️).
+- react-bootstrap: React components for Bootstrap styling (📦).
+- react-redux: Official React bindings for Redux (🔗).
+- redux: State management library for JavaScript applications (🌐).
+- redux-persist: Library for persisting Redux store state (💾).
+- uuid: Library for generating unique identifiers (🆔).
+- yup: JavaScript schema validation library (✅).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contact Information
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Author:** Serhii Nezhyhai
+- **Email:** [abc1971h@gmail.com](mailto:abc1971h@gmail.com)
+- **My other works:** [https://serhii.vercel.app/](https://serhii.vercel.app/)
