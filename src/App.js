@@ -1,24 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import TaskList from "./components/TaskList";
+import TaskModal from "./components/TaskModal";
+
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+
+import TaskNavbar from "components/TaskNavbar";
 
 function App() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedTask, setSelectedTask] = useState(null);
+
+  const openModal = (task) => {
+    setSelectedTask(task);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setSelectedTask(null);
+    setIsModalOpen(false);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        <TaskNavbar openModal={openModal} />
       </header>
-    </div>
+      <main className=" mt-5">
+        <Container>
+          <Row>
+            <Col md={8} className="mx-auto">
+              <TaskList />
+            </Col>
+          </Row>
+          {isModalOpen && (
+            <TaskModal
+              show={isModalOpen}
+              onHide={closeModal}
+              task={selectedTask}
+            />
+          )}
+        </Container>
+      </main>
+    </>
   );
 }
 
